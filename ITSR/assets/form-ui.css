@@ -1,0 +1,101 @@
+:root {
+    --form-bg-top: rgba(238, 245, 251, 0.88);
+    --form-bg-bottom: rgba(227, 237, 246, 0.9);
+    --form-border: rgba(205, 216, 227, 0.94);
+    --form-text: #14263b;
+    --form-soft: #5f7389;
+    --form-accent: #1d4ed8;
+}
+
+body {
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.38), transparent 24%),
+        linear-gradient(var(--form-bg-top), var(--form-bg-bottom)),
+        url('assets/cloud.jpg') center/cover fixed no-repeat;
+}
+
+.page {
+    border-radius: 28px;
+    border: 1px solid var(--form-border);
+    box-shadow: 0 26px 56px rgba(20, 38, 59, 0.12);
+}
+
+.topbar {
+    gap: 20px;
+    padding-bottom: 18px;
+    margin-bottom: 16px;
+}
+
+.logo-box {
+    border-radius: 16px;
+    border-color: rgba(31, 50, 72, 0.68);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.main-title {
+    letter-spacing: -0.04em;
+}
+
+.subtitle,
+.intro p,
+.admin-note,
+.note-list,
+.footer-note {
+    color: var(--form-soft);
+}
+
+.section-box {
+    border-radius: 18px;
+    border-color: var(--form-border);
+}
+
+.section-title {
+    padding: 13px 16px;
+    letter-spacing: 0.08em;
+}
+
+.form-table th,
+.form-table td {
+    border-color: #d9e1ea;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    color: var(--form-text);
+}
+
+.dropzone {
+    border-radius: 14px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.dropzone:hover,
+.dropzone.is-dragover {
+    background: #edf5ff;
+    border-color: var(--form-accent);
+}
+
+.service-grid label,
+.checkbox-pill {
+    border-radius: 14px;
+}
+
+.submit-row .btn-submit,
+button[type="submit"] {
+    border-radius: 16px;
+    box-shadow: 0 16px 34px rgba(37, 99, 235, 0.18);
+}
+
+@media (max-width: 900px) {
+    .page {
+        padding: 18px;
+        border-radius: 24px;
+    }
+
+    .main-title {
+        font-size: 30px;
+    }
+}

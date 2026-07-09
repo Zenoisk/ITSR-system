@@ -1,0 +1,7 @@
+vendor/
+storage/
+.env
+*.log
+*.zip
+*.rar
+*.user
